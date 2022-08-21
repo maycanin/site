@@ -69,10 +69,11 @@ export default function Home() {
         </motion.a>
         </div>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          {' '}
-          <a className={styles.buttonRight} href="/contato">
+        <Link  href='/contato'>
+            <a className={styles.buttonRight}>
               <h2>Contato</h2>
-          </a>
+            </a>    
+          </Link>
         </motion.div>
       </div>
     </main>
