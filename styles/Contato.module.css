@@ -57,7 +57,7 @@
   align-items: center;
   text-align: center;
   height: 80%;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .button {
   position: relative;
@@ -103,4 +103,16 @@
   border: 1px solid rgba(74, 166, 247, 0.5);
   backdrop-filter: blur(20px);
   border-radius: 60px 0px 0px 60px;
+}
+@media (max-width: 768px){
+  .contCard {
+    flex-direction: column;
+  overflow: auto;
+  }
+  .buttonLeft{
+    border-radius: 60px 60px 60px 60px;   
+  }
+  .buttonRight{
+    border-radius: 60px 60px 60px 60px;
+  }
 }

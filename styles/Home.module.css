@@ -90,3 +90,15 @@
   backdrop-filter: blur(20px);
   border-radius: 60px 0px 0px 60px;
 }
+
+@media (max-width: 768px){
+  .container {
+    flex-direction: column;
+  }
+  .buttonLeft{
+    border-radius: 60px 60px 60px 60px;   
+  }
+  .buttonRight{
+    border-radius: 60px 60px 60px 60px;
+  }
+}

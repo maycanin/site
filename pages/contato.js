@@ -35,7 +35,8 @@ export default function Home() {
             </div>
           </a>
         </motion.div>
-        <motion.div
+    
+          <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -111,7 +112,7 @@ export default function Home() {
             </div>
             <div className={styles.cardBody}>
               <h3 className={styles.text}>
-                Entre em contato com a equipe de desenvolvimento do +on.tec serviços digitais
+                Entre em contato a nossa equipe de suporte e desenvolvimento do +on.tec serviços digitais
               </h3>
               <h1 className={styles.text1}>Fale com a equipe</h1>
               <div className={styles.grid}>
@@ -137,7 +138,6 @@ export default function Home() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  {' '}
                   <ContatoCard image={discord} desc="Discord" />
                 </motion.div>
               </div>

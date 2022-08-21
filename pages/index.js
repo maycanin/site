@@ -28,7 +28,7 @@ export default function Home() {
             <div>
               <h2 className={styles.text2}>Contato</h2>
             </div>
-          </a>
+          </a> 
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
