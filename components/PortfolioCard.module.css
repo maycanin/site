@@ -1,0 +1,43 @@
+.tec {
+  color: #fff;
+  font-size: 2.2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Saira', sans-serif;
+  width: 430px;
+  height: 430px;
+  border: 1px solid rgba(74, 166, 247, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 60px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Saira-Bold', sans-serif;
+  width: 100%;
+  height: 20%;
+}
+.cardBody {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.image {
+  border-radius: 30px;
+}
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.text {
+  color: #4aa6f7;
+  font-size: 25px;
+}
