@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Contato.module.css'
 import { Player } from '@lottiefiles/react-lottie-player'
 import { motion } from 'framer-motion'
@@ -29,11 +30,11 @@ export default function Home() {
       />
       <div className={styles.container}>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <a className={styles.buttonLeft} href="/">
-            <div>
-              <h2 className={styles.text2}>Home</h2>
-            </div>
-          </a>
+        <Link  href='/'>
+            <a className={styles.buttonLeft}>
+              <h2>Home</h2>
+            </a>    
+          </Link>
         </motion.div>
     
           <motion.div
@@ -145,11 +146,11 @@ export default function Home() {
           </div>
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <a className={styles.buttonRight} href="/portfolio">
-            <div>
-              <h2 className={styles.text2}>Portfólio</h2>
-            </div>
-          </a>
+        <Link  href='/portfolio'>
+            <a className={styles.buttonRight}>
+              <h2>Portfólio</h2>
+            </a>    
+          </Link>
         </motion.div>
       </div>
     </main>

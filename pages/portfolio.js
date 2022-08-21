@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Portfolio.module.css'
 import { Player } from '@lottiefiles/react-lottie-player'
 import ieq from '../public/7ieq-site.jpg'
@@ -27,11 +28,11 @@ export default function Home() {
       />
       <div className={styles.container}>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <a className={styles.buttonLeft} href="/">
-            <div>
-              <h2 className={styles.text2}>Home</h2>
-            </div>
-          </a>
+          <Link  href='/'>
+            <a className={styles.buttonLeft}>
+              <h2>Home</h2>
+            </a>    
+          </Link>
         </motion.div>
         <div className={styles.grid}>
         <motion.a href  = "https://copy-cartorio-6em32q5lw-maycanin.vercel.app/" target="_blank"
@@ -70,9 +71,7 @@ export default function Home() {
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           {' '}
           <a className={styles.buttonRight} href="/contato">
-            <div>
-              <h2 className={styles.text2}>Contato</h2>
-            </div>
+              <h2>Contato</h2>
           </a>
         </motion.div>
       </div>
