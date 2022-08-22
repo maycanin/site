@@ -43,7 +43,7 @@ export default function Home() {
           >
             <PortfolioCard
               titulo="Clone UI Cartório"
-              image={cartorio}
+              image={cartorio} alt="Cartório"
               desc="Ambiente de Treinamento"
             />
           </motion.a>
@@ -55,7 +55,7 @@ export default function Home() {
           >
             <PortfolioCard
               titulo="7ª Igreja Quadrangular"
-              image={ieq}
+              image={ieq} alt="IEQ"
               desc="Ambiente de Treinamento"
             />
           </motion.a>
@@ -67,7 +67,7 @@ export default function Home() {
           >
             <PortfolioCard
               titulo="Cardápio Digital"
-              image={pizza}
+              image={pizza} alt="Cardápio Pizzaria"
               desc="Ambiente de Treinamento"
             />
           </motion.a>

@@ -67,26 +67,26 @@ export default function Home() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <ContatoCard image={telefone} desc="Telefone" />
+                    <ContatoCard image={telefone} desc="Telefone" alt="Telefone"/>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <ContatoCard image={whatsapp} desc="Whatsapp" />
+                    <ContatoCard image={whatsapp} desc="Whatsapp" alt="Whatsapp"/>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <ContatoCard image={gmail} desc="Email" />
+                    <ContatoCard image={gmail} desc="Email" alt="Email" />
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     {' '}
-                    <ContatoCard image={facebook} desc="Facebook" />
+                    <ContatoCard image={facebook} desc="Facebook" alt="Facebook"/>
                   </motion.div>
                 </div>
               </div>
@@ -122,25 +122,25 @@ export default function Home() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <ContatoCard image={telegram} desc="Telegram" />
+                    <ContatoCard image={telegram} desc="Telegram" alt="Telegram"/>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <ContatoCard image={whatsapp} desc="Whatsapp" />
+                    <ContatoCard image={whatsapp} desc="Whatsapp" alt="Whatsapp"/>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <ContatoCard image={gmail} desc="Email" />
+                    <ContatoCard image={gmail} desc="Email" alt="Email"/>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <ContatoCard image={discord} desc="Discord" />
+                    <ContatoCard image={discord} desc="Discord" alt="Discord"/>
                   </motion.div>
                 </div>
               </div>

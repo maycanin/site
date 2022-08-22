@@ -51,7 +51,7 @@ export default function Home() {
               </h2>
             </div>
             <div className={styles.cardBody}>
-              <Image width={200} height={200} src={perfil} />
+              <Image width={200} height={200} src={perfil} alt={"Mayson"}/>
               <h3 className={styles.text}>DESENVOLVEDOR</h3>
               <h1 className={styles.text1}>Mayson Cândido Inácio</h1>
             </div>
