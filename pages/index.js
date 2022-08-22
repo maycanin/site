@@ -6,8 +6,13 @@ import { Player } from '@lottiefiles/react-lottie-player'
 import { motion } from 'framer-motion'
 import perfil from '../public/mayson.png'
 import { MotionConfig } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
+  const [windowSize, setWindowSize] = useState()
+  useEffect(() => {
+    setWindowSize(window.innerWidth)
+  }, [])
   return (
     <main className={styles.bg}>
       <Player
@@ -24,11 +29,9 @@ export default function Home() {
         }}
       />
       <div className={styles.container}>
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Link href="/contato">
-            <a className={styles.buttonLeft}>
-              <h2>Contato</h2>
-            </a>
+        <motion.div className={styles.buttonLeft} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link href="/contato" passHref>
+            <h2>Contato</h2>
           </Link>
         </motion.div>
         <motion.div
@@ -37,11 +40,12 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           whileHover={{ scale: 1.05 }}
           drag
+          dragListener={windowSize > 930 ? true : false}
           dragConstraints={{
             top: -30,
             left: -30,
             right: 30,
-            bottom: 30,
+            bottom: 30
           }}
         >
           <div className={styles.card}>
@@ -51,7 +55,7 @@ export default function Home() {
               </h2>
             </div>
             <div className={styles.cardBody}>
-              <Image width={200} height={200} src={perfil} alt={"Mayson"}/>
+              <Image width={200} height={200} src={perfil} alt={'Mayson'} />
               <h3 className={styles.text}>DESENVOLVEDOR</h3>
               <h1 className={styles.text1}>Mayson Cândido Inácio</h1>
             </div>
@@ -68,11 +72,9 @@ export default function Home() {
             </div>
           </div>
         </motion.div>
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Link href="/portfolio">
-            <a className={styles.buttonRight}>
+        <motion.div className={styles.buttonRight} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} >
+          <Link href="/portfolio" passHref>
               <h2>Portfólio</h2>
-            </a>
           </Link>
         </motion.div>
       </div>

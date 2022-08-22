@@ -42,13 +42,6 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.01 }}
-            drag
-            dragConstraints={{
-              top: -30,
-              left: -30,
-              right: 30,
-              bottom: 30,
-            }}
           >
             <div className={styles.card}>
               <div className={styles.cardHeader}>
@@ -97,13 +90,6 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.01 }}
-            drag
-            dragConstraints={{
-              top: -30,
-              left: -30,
-              right: 30,
-              bottom: 30,
-            }}
           >
             <div className={styles.card}>
               <div className={styles.cardHeader}>

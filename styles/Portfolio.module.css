@@ -95,3 +95,31 @@
     border-radius: 60px 60px 60px 60px;
   }
 }
+@media (max-height: 720px) {
+  .buttonRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 4em;
+
+    }
+    .buttonLeft {
+      z-index: 1;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 4em;
+    }
+    .card {
+      justify-content: center;
+      width: 380px;
+      height: 550px;
+      }
+
+      .grid {
+        padding-top: 90px;}
+}

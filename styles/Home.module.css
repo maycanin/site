@@ -32,8 +32,8 @@
 }
 .cardHeader {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   font-weight: 600;
   font-size: 60px;
   font-family: 'KoHo', sans-serif;
@@ -44,16 +44,22 @@
   font-weight: 100;
   display: flex;
   flex-direction: column;
-  padding-top: 56px;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 70%;
 }
 
 .text {
+  margin-top: 20px;
+  margin-bottom: 0;
   color: #4aa6f7;
-  padding-top: 33px;
+}
+.text1 {
+  margin: 0;
 }
 .cardFooter {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +68,7 @@
   height: 15%;
 }
 .buttonLeft {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,6 +83,7 @@
   border-radius: 0px 60px 60px 0px;
 }
 .buttonRight {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,22 +100,87 @@
 
 @media (max-width: 930px) {
   .container {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  justify-content: center;
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+     }
   .card {
-    width: 400px;
-    height: 670px;
-  }
+    justify-content: center;
+    width: 380px;
+    height: 550px;
+    }
+    .cardHeader {
+      justify-content: center;
+      height: 15%;
+    }
+    .cardFooter {
+      justify-content: center;
+      padding-top: 0px;
+       height: 10%;
+    }
+    .cardBody{
+      justify-content: center;
+      height: 60%;
+    }
   .buttonLeft {
-    width: 200px;
-    height: 80px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 40%;
+    height: 9%;
     border-radius: 60px 60px 60px 60px;
   }
   .buttonRight {
-    width: 200px;
-    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 40%;
+    height: 9%;
     border-radius: 60px 60px 60px 60px;
   }
+}
+@media (max-height: 720px) {
+  .buttonRight {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 4em;
+    }
+    .buttonLeft {
+      z-index: 1;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 4em;
+    }
+    .card {
+      justify-content: center;
+      width: 380px;
+      height: 550px;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      justify-content: center;}
 }
