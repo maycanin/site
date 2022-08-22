@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Portfolio.module.css'
 import { Player } from '@lottiefiles/react-lottie-player'
-import ieq from '../public/7ieq-site.jpg'
-import cartorio from '../public/cartorio-site.jpg'
-import exemplo from '../public/exemploportfolio.jpg'
-import pizza from '../public/GiovanioPizza-site.jpg'
+import ieq from '../public/7ieq-site.JPG'
+import cartorio from '../public/cartorio-site.JPG'
+import exemplo from '../public/exemploportfolio.JPG'
+import pizza from '../public/GiovanioPizza-site.JPG'
 import { PortfolioCard } from '../components/PortfolioCard'
 import { motion } from 'framer-motion'
 
@@ -79,7 +79,7 @@ export default function Home() {
           >
             <PortfolioCard
               titulo="Portfólio Exemplo"
-              image={exemplo}
+              image={exemplo} alt="Portfolio Exemplo"
               desc="Ambiente de Treinamento"
             />
           </motion.a>
