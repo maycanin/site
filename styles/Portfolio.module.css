@@ -46,7 +46,7 @@
   backdrop-filter: blur(20px);
   border-radius: 60px 0px 0px 60px;
 }
-@media (max-width: 930px) {
+@media (max-width: 1370px) {
   .container {
     padding-top: 10px;
     padding-bottom: 10px;
