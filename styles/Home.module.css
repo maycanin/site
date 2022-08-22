@@ -12,7 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .tec {
   color: #4aa6f7;
@@ -91,14 +90,24 @@
   border-radius: 60px 0px 0px 60px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 900px) {
   .container {
     flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
-  .buttonLeft{
-    border-radius: 60px 60px 60px 60px;   
+  .card {
+    width: 400px;
+    height: 670px;
   }
-  .buttonRight{
+  .buttonLeft {
+    width: 200px;
+    height: 80px;
+    border-radius: 60px 60px 60px 60px;
+  }
+  .buttonRight {
+    width: 200px;
+    height: 80px;
     border-radius: 60px 60px 60px 60px;
   }
 }

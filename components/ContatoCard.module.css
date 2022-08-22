@@ -14,7 +14,6 @@
   backdrop-filter: blur(20px);
   border-radius: 20px;
 }
-
 .cardHeader {
   display: flex;
   justify-content: center;
@@ -31,4 +30,12 @@
 .text {
   color: #4aa6f7;
   font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 10px;
+    width: 140px;
+    height: 140px;
+  }
 }

@@ -25,11 +25,11 @@ export default function Home() {
       />
       <div className={styles.container}>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-        <Link  href='/contato'>
+          <Link href="/contato">
             <a className={styles.buttonLeft}>
               <h2>Contato</h2>
-            </a>    
-          </Link> 
+            </a>
+          </Link>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -69,10 +69,10 @@ export default function Home() {
           </div>
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-        <Link  href='/portfolio'>
+          <Link href="/portfolio">
             <a className={styles.buttonRight}>
               <h2>Portfólio</h2>
-            </a>    
+            </a>
           </Link>
         </motion.div>
       </div>
